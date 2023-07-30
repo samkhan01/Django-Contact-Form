@@ -1,0 +1,27 @@
+{% extends 'comm.html' %}
+{% block title %}sduykgfhazvhadsh{% endblock title %}
+{% block ody %}
+<div class="container mt-5">
+    <h2>Contact Us</h2>
+    <form action="/" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="value">Name:</label>
+            <input type="text" class="form-control" id="value" name="value" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="pho">Email:</label>
+            <input type="pho" class="form-control" id="pho" name="pho" required>
+        </div>
+        <div class="form-group">
+            <label for="decs">Message:</label>
+            <textarea class="form-control" id="decs" name="decs" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock ody %}
